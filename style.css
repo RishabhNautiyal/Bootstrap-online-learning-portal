@@ -1,0 +1,729 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-family: "Exo" sans-serif;
+}
+
+html {
+  font-size: 62%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  padding: 1rem 4rem;
+  -webkit-box-shadow: 0 0.1rem 0.3rem #999;
+          box-shadow: 0 0.1rem 0.3rem #999;
+  z-index: 1100;
+  background: white;
+}
+
+#header .logo img {
+  height: 4rem;
+}
+
+#header .title {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: "Kaushan Script";
+}
+
+#header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+#header nav ul li {
+  margin-right: 2rem;
+}
+
+#header nav ul li a {
+  color: black;
+  font-size: 2rem;
+}
+
+#header nav ul li a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+#header .fa-bars {
+  font-size: 3rem;
+  color: grey;
+  cursor: pointer;
+  display: none;
+}
+
+#home {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(55deg, white 50%, rgba(196, 196, 196, 0) 50.4%), url(/imgs/background1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-animation: background 10s alternate infinite;
+          animation: background 10s alternate infinite;
+}
+
+#home .content {
+  position: relative;
+}
+
+#home .content h1 {
+  font-size: 5rem;
+  font-family: "Kaushan Script";
+  color: #000000;
+}
+
+#home .content h2 {
+  font-size: 4rem;
+  font-family: "Kaushan Script";
+  color: #000000;
+}
+
+#home .content h3 {
+  font-size: 2.5rem;
+  font-family: "Dancing Script";
+  color: #000000;
+}
+
+#home .content .icons {
+  position: absolute;
+  left: 2rem;
+  bottom: -60%;
+  width: 100%;
+}
+
+#home .content .icons a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: darkgray;
+  border-radius: 7rem;
+  font-size: 2rem;
+  color: black;
+  margin-right: 1.6rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#home .content .icons a:hover {
+  text-decoration: none;
+  background: blanchedalmond;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+#article {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#article .heading {
+  font-size: 4rem;
+  padding-top: 4rem;
+  margin: 3rem 0;
+  color: whitesmoke;
+  text-align: center;
+  position: relative;
+  color: #000000;
+  font-family: "Kaushan Script";
+}
+
+#article .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.2rem;
+  width: 60%;
+  border-radius: 5rem;
+  background: #000000;
+}
+
+#article .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+#article .box-container .box {
+  height: 20rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 0.5rem black;
+          box-shadow: 0 0 0.5rem black;
+  margin: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#article .box-container .box .img {
+  height: 30vh;
+  width: 30vw;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
+}
+
+#article .box-container .box p {
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "DancingScript";
+  color: antiquewhite;
+  opacity: 0;
+  -webkit-transform: translateY(13rem);
+          transform: translateY(13rem);
+}
+
+#article .box-container .box:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+}
+
+#article .box-container .box:hover img {
+  height: 18%;
+  width: 18%;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+  padding: 0 0.5rem;
+}
+
+#article .box-container .box:hover {
+  background: #585454;
+}
+
+#course {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #747070;
+}
+
+#course .heading {
+  font-size: 4rem;
+  padding-top: 4rem;
+  margin: 3rem 0;
+  color: whitesmoke;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-family: "Kaushan Script";
+}
+
+#course .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.2rem;
+  width: 60%;
+  border-radius: 5rem;
+  background: #000000;
+}
+
+#course .box-container {
+  width: 90%;
+}
+
+#course .box-container .box {
+  background: #d4caca;
+  max-width: 50rem;
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0 0 0.5rem white;
+          box-shadow: 0 0 0.5rem white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 5rem 3rem;
+  margin: 3rem;
+  clear: both;
+}
+
+#course .box-container .box .img {
+  height: 6rem;
+  margin-right: 2rem;
+}
+
+#course .box-container .box .info {
+  padding-left: 2.5rem;
+  border-left: 0.3rem solid #000000;
+}
+
+#course .box-container .box .info p {
+  font-size: 2rem;
+  color: #000000;
+}
+
+#course .box-container .box:nth-child(2) {
+  float: right;
+}
+
+#course .box-container .box:nth-child(4) {
+  float: right;
+}
+
+@-webkit-keyframes background {
+  0%,
+  100% {
+    background: linear-gradient(65.1deg, white 50%, rgba(196, 196, 196, 0) 50.4%), url(/imgs/background1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  25% {
+    background: linear-gradient(65.1deg, white 50%, rgba(196, 196, 196, 0) 50.4%), url(/imgs/background2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  50% {
+    background: linear-gradient(65.1deg, white 50%, rgba(196, 196, 196, 0) 50.4%), url(/imgs/background3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  75% {
+    background: linear-gradient(65.1deg, white 50%, rgba(196, 196, 196, 0) 50.4%), url(/imgs/background4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@keyframes background {
+  0%,
+  100% {
+    background: linear-gradient(65.1deg, white 50%, rgba(196, 196, 196, 0) 50.4%), url(/imgs/background1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  25% {
+    background: linear-gradient(65.1deg, white 50%, rgba(196, 196, 196, 0) 50.4%), url(/imgs/background2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  50% {
+    background: linear-gradient(65.1deg, white 50%, rgba(196, 196, 196, 0) 50.4%), url(/imgs/background3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  75% {
+    background: linear-gradient(65.1deg, white 50%, rgba(196, 196, 196, 0) 50.4%), url(/imgs/background4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+#review {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #774141;
+}
+
+#review .heading {
+  font-size: 4rem;
+  padding-top: 4rem;
+  margin: 3rem 0;
+  color: whitesmoke;
+  text-align: center;
+  position: relative;
+  font-family: "Kaushan Script";
+}
+
+#review .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.2rem;
+  width: 60%;
+  border-radius: 5rem;
+  background: #000000;
+}
+
+#review .heading::after {
+  background: black;
+}
+
+#review .box-container {
+  width: 95%;
+}
+
+#review .box-container .box {
+  max-width: 60rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+  margin-left: 4rem;
+  padding-left: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  clear: both;
+}
+
+#review .box-container .box img {
+  position: absolute;
+  top: 50%;
+  left: -9%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 11rem;
+  width: 11rem;
+  border-radius: 10rem;
+  border: 0.5rem solid #000000;
+  -webkit-box-shadow: 0 0 3rem #000000 inset;
+          box-shadow: 0 0 3rem #000000 inset;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#review .box-container .box .info h2 {
+  margin-top: -3rem;
+  margin: 2rem;
+  color: #000000;
+  text-align: right;
+  font-family: "Dancing Script";
+  font-size: 4rem;
+}
+
+#review .box-container .box .info p {
+  font-size: 2.2rem;
+  padding: 1rem;
+  color: grey;
+}
+
+#review .box-container .box .info p i {
+  color: black;
+  padding: 2rem;
+}
+
+#review .box-container .box:nth-child(even) {
+  float: right;
+}
+
+#contact {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#contact .container .aboutus {
+  margin-right: 20px;
+  width: 40%;
+}
+
+#contact .container .aboutus h1 {
+  position: relative;
+  color: black;
+  font-size: 3rem;
+  font-family: "Dancing Script";
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+#contact .container .aboutus h1 h1:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: black;
+}
+
+#contact .container .aboutus p {
+  position: relative;
+  color: gray;
+  font-size: 1.8rem;
+  font-family: "Open Sans Condensed";
+  font-weight: 200;
+}
+
+#contact .container .aboutus .icons {
+  position: absolute;
+  left: 2rem;
+  margin-left: 7%;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+#contact .container .aboutus .icons a {
+  height: 2rem;
+  width: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  background: white;
+  font-size: 3rem;
+  margin-inline: 2rem;
+  color: black;
+  margin-right: 2rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#contact .container .aboutus .icons a:hover {
+  text-decoration: none;
+  background: blanchedalmond;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+#contact .container .links {
+  position: relative;
+  width: 25%;
+}
+
+#contact .container .contact {
+  margin-right: 0 important;
+  font-size: 1.8rem;
+}
+
+#contact .container .contact .info {
+  position: relative;
+}
+
+#contact .container .contact .info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+#contact .container .contact .info li span:nth-child(1) {
+  color: black;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#contact .container .contact .info li span {
+  color: gray;
+  font-size: 1.8rem;
+}
+
+.copyright {
+  width: 100%;
+  background: gray;
+  padding: 8px 80px;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  #header .fa-bars {
+    display: block;
+  }
+  #header nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    background: whitesmoke;
+  }
+  #header nav ul {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header nav ul li {
+    margin: 2rem 0;
+  }
+  #header nav ul li a {
+    font-size: 3rem;
+  }
+  #header .nav-toggle {
+    top: 5.5rem;
+  }
+  #home {
+    -webkit-animation: none;
+            animation: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(224, 219, 219, 0.438)), to(rgba(223, 215, 215, 0.555))), url(/imgs/pexels-anete-lusina-4792729.jpg) no-repeat;
+    background: linear-gradient(rgba(224, 219, 219, 0.438), rgba(223, 215, 215, 0.555)), url(/imgs/pexels-anete-lusina-4792729.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #home .content {
+    text-shadow: 0.2rem, 0.2rem, 0.4rem #444;
+  }
+  #home .content .icons {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 500px) {
+  #course .box-container .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 1.7rem;
+  }
+  #course .box-container .box img {
+    height: 10rem;
+    margin: 1rem;
+  }
+  #course .box-container .box .info {
+    padding-left: 0;
+    padding-top: 4rem;
+    border: none;
+    text-align: center;
+  }
+  #course .box-container .box .info p {
+    padding: 1rem;
+  }
+  #review .box-container .box {
+    padding: 0.5rem;
+    margin-top: 13rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #review .box-container .box img {
+    left: 35%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: -1%;
+    height: 18rem;
+    width: 18rem;
+  }
+  #review .box-container .box .info {
+    text-align: center;
+  }
+  #review .box-container .box .info p {
+    padding-top: 10rem;
+  }
+  #review .box-container .box .info h2 {
+    text-align: center;
+    margin: 1.5rem;
+  }
+  #review .box-container .box:nth-child(even) {
+    float: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
